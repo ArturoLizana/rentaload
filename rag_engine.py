@@ -29,7 +29,7 @@ REGLAS DE RESPUESTA:
 """
 
 # 2. Configurar Gemini como LLM (usando el modelo flash correcto)
-Settings.llm = GoogleGenAI(model="gemini-1.5-flash", system_instruction=SYSTEM_PROMPT)
+Settings.llm = GoogleGenAI(model="gemini-3-flash-preview", system_instruction=SYSTEM_PROMPT)
 
 # 3. Configurar el modelo de embeddings local
 Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")

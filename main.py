@@ -15,9 +15,9 @@ origins = [
     "http://localhost:3000",
 ]
 
-app.add.middleware(
+app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["*"],  # O los dominios permitidos
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
